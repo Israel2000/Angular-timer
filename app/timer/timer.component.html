@@ -1,0 +1,26 @@
+
+<div id="container">
+  <br />
+  <br />
+
+  <div id="timer">
+    <div id="time">
+        {{counter | formatTimer}}
+      <!-- <span id="minutes"></span>
+      <span id="colon">:</span>
+      <span id="seconds"></span> -->
+    </div>
+
+  </div>
+
+  <div id="buttons">
+    <button (click)="start()" id="start">Start!</button>
+
+    <button (click)="stop()" id="stop">Stop</button>
+    <button (click)="reset()" id="reset">Reset</button>
+    <br />
+    <button (click)="addFive()" id="addFivem">+5</button>
+    <button (click)="minusFive()" id="minusFivem">-5</button>
+  </div>
+
+</div>
